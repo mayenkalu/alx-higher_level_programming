@@ -6,4 +6,4 @@ def square_matrix_simple(matrix=[]):
         for elems in matrix[:]:
             new_matrix.append(list(map(lambda x: x ** 2, elems)))
 
-    return new_matx
+    return new_matrix
