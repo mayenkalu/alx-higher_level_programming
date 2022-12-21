@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-class Square:
-    def __init__(self, size):
-        self.size = size
+"""Square module.
 
-    def area(self):
-        return self.size ** 2
+This module contains a class that defines a square.
+
+"""
+
+
+class Square:
+    """Defines a square."""
+
+    pass
