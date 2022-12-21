@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """This is a square module.
 This module contains a class that defines a square
-initialise its size and verify that its size is an integer
-and it is greater than or equal to 0.
+initialise its size and position, verify that given values are integers
+and greater than or equal to 0. A getter and setter method to get or set the values.
+An area method that returns the area of the square, and a method that prints.
+
 """
 
 
@@ -49,5 +51,7 @@ class Square:
         if self.__size == 0:
             print()
         else:
+            for i in range(self.__position[1]):
+                print()
             for i in range(self.__size):
-                print("#" * self.__size)
+                print(" " * self.__position[0] + "#" *
