@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """This is a square module.
 
-This module contains a class that defines a square initialise 
-its size, verify that given values are integers
-and greater than or equal to 0. A getter and setter method to get or set the values.
-An area method that returns the area of the square.
+This module contains a class that defines a square initialise
+its size, verify that given values are integers and greater
+than or equal to 0. A getter and setter method to get or set
+the values. An area method that returns the area of the square.
 
 """
 
@@ -35,4 +35,3 @@ class Square:
     def area(self):
         """Returns the current square area."""
         return self.__size ** 2
-
