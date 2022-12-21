@@ -6,6 +6,8 @@ initialise its size and verify that its size is an integer
 and it is greater than or equal to 0.
 
 """
+
+
 class Square:
     """Defines a square"""
 
