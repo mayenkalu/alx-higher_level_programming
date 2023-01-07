@@ -2,6 +2,8 @@
 """
 Defines lazy_matrix function
 """
+
+
 import numpy
 
 
