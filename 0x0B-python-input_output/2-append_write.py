@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-Defines an append_write function.
-"""
+"""Defines a file-appending function."""
+
 
 def append_write(filename="", text=""):
     """returns the number of characters appended to a UTF8-text file"""
