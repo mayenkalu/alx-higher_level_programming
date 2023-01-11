@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""defines a text file-appending function"""
+"""Defines a file-writing function."""
 
 
-def append_write(filename="", text="")
-    """return the number of characters of string appended to UTF-8 text file"""
-    with open(filename, 'a', encoding='utf-8') as f:
+def write_file(filename="", text="")
+    """Write a string to a UTF-8text file.
+    Args:
+        filename(str): The name of the file to write.
+        text(str): The text to write to the file.
+    Returns:
+        The number of characters written.
+    """
+    with open(filename, "w", encoding="utf-8") as f:
         count = f.write(text)
     return count
