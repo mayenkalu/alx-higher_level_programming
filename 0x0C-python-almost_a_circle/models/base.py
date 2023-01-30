@@ -6,6 +6,7 @@ import json
 import turtle
 import csv
 
+
 class Base:
     """This class represents a model.
 
@@ -19,7 +20,7 @@ class Base:
 
     def __init__(self, id=None):
         """This method initialize a new base.
-        
+
         Args:
             id (int): is the identity of the new base.
         """
