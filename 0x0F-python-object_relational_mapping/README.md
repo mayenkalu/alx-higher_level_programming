@@ -1,5 +1,5 @@
 # Python :page_with_curl: 0x0F-python-object_relational_mapping
-This project explores the concept of [Object Relational Mapping]{https://www.fullstackpython.com/object-relational-mappers-orms.html}. ORM is a special tool that connects two things - an object-oriented programming language and a relational database. It provides a way to store and retrieve data from a database using the programming language's objects, rather than writing complex SQL queries. This makes it easier for developers to work with databases and allows them to focus on the application logic instead of database management.
+This project explores the concept of [Object Relational Mapping](https://www.fullstackpython.com/object-relational-mappers-orms.html). ORM is a special tool that connects two things - an object-oriented programming language and a relational database. It provides a way to store and retrieve data from a database using the programming language's objects, rather than writing complex SQL queries. This makes it easier for developers to work with databases and allows them to focus on the application logic instead of database management.
 ORM helps take the information in the database and turn it into objects that can be used in the programming language. This makes it easier for developers to work with the information and focus on building the program, rather than worrying about managing the database. 
 
 ## Objectives :bulb:
@@ -12,8 +12,8 @@ What ORM means
 How to map a Python Class to a MySQL table
 
 ## Task Description
-|----|-------------------------|-------------------------------|
-|Task| File name | Description |
+|  Task  |  File name  |  Description  |
+|--------|-------------|---------------|
 |  0  | [0-select_states.py](./0-select_states.py)  | Python script that uses MySQLdb to list all states in the database `hbtn_0e_0_usa`.
 Usage: `./0-select_states.py <mysql username> <mysql password>
   <database name>`.
