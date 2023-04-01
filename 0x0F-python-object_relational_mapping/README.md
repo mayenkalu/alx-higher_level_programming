@@ -14,13 +14,9 @@ In this project, I learnt:
 ## Task Description
 |  Task  |  File name  |  Description  |
 |--------|-------------|---------------|
-|  0  | [0-select_states.py](./0-select_states.py)  | Python script that uses MySQLdb to list all states in the database `hbtn_0e_0_usa`. Usage: `./0-select_states.py <mysql username> <mysql password>
-  <database name>`. Results are ordered by ascending `states.id` |
-
+|  0  | [0-select_states.py](./0-select_states.py)  | Python script that uses MySQLdb to list all states in the database `hbtn_0e_0_usa`. Usage: `./0-select_states.py <mysql username> <mysql password>  <database name>`. Results are ordered by ascending `states.id` |
 |  1  | [1-filter_states.py](./1-filter_states.py)  |  Python script that uses MySQLdb to list all states with names starting with `N` in the database `hbtn_0e_0_usa`. Usage: `./1-filter_states.py <mysql username> <mysql password>   <database name>`. Results are ordered by ascending `states.id` |
-
 |  2  | [2-my_filter_states.py](./2-my_filter_states.py)  |  Python script that uses MySQLdb to display all values matching a given name in the `states` table of the database `hbtn_0e_0_usa`. Usage: `./2-my_filter_states.py <mysql username> <mysql password>  <database name> <state name searched>`. Results are ordered by ascending `states.id`. Uses string formatting to construct the SQL query |
-
 |  3  | [3-my_safe_filter_states.py](./3-my_safe_filter_states.py)  |  Python script that uses MySQLdb to display all values matching a given name in the `states` table of the database `hbtn_0e_0_usa`. Usage: `./3-my_safe_filter_states.py <mysql username> <mysql password>  <database name> <state name searched>`. Results are ordered by ascending `states.id`. Safe from SQL injections |
 
 |  4  | [4-cities_by_state.py](./4-cities_by_state.py)  |  Python script that uses MySQLdb to list all cities from the database `hbtn_0e_4_usa`. Usage: `./4-cities_by_state.py <mysql username> <mysql password>
