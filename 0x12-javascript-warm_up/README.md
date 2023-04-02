@@ -95,30 +95,30 @@ In this project, I understood and practiced:
 
   13. [12-object.js](./12-object.js): Update of the following script that replaces
   the value `12` with `89`.
-            ```
-            #!/usr/bin/node
-            const myObject = {
-              type: 'object',
-              value: 12
-            };
-            console.log(myObject);
-            /*
-            YOUR CODE HERE
-            */
-            console.log(myObject);
-            ```
+```
+#!/usr/bin/node
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+console.log(myObject);
+```
 
   14. [13-add.js](./13-add.js): JavaScript function `add` that returns the addition
   of two numbers.
 
   15. [100-let_me_const.js](./100-let_me_const.js): JavaScript script that modifies
   the value of `myVar` in the following file to `333`.
-            ```
-            #!/usr/bin/node
-            myVar = 89;
-            require('./100-let_me_const')
-            console.log(myVar);
-            ```
+```
+#!/usr/bin/node
+myVar = 89;
+require('./100-let_me_const')
+console.log(myVar);
+```
 
   * [101-call_me_moby.js](./101-call_me_moby.js): JavaScript function that executes
   `x` times a given function.
