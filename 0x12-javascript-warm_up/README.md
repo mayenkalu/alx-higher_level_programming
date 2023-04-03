@@ -1,4 +1,4 @@
-# Javascript - warm_up : script :
+# Javascript - warm_up :script: 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics) is a high-level programming language that is commonly used for scripting and building web front-ends. It is an essential component of web development, allowing developers to create interactive, dynamic, and responsive web pages that can be customized and personalized based on user interactions.
 
 In web front-end development, JavaScript is primarily used for adding interactivity and functionality to HTML and CSS code. JavaScript can be used to manipulate HTML elements, such as changing their content or appearance, responding to user input, and handling events like clicks and scrolls. It can also be used to dynamically generate HTML content, allowing developers to build web pages on the fly.
