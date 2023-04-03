@@ -3,7 +3,7 @@
 -- The database name will be passed as an argument of the mysql command
 
 DELETE FROM 
-    hbtn_0c_0.second_table 
+    second_table 
 WHERE 
     score <= 5;
 
