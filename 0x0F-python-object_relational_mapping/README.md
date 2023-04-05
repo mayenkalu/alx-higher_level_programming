@@ -184,8 +184,8 @@ To interact with the database, you create a session using the `sessionmaker` obj
     - Script deletes all `State` objects with a name containing the letter `a` from the database `hbtn_0e_6_usa`.
     - Conditions same in [7-model_state_fetch_all.py](./7-model_state_fetch_all.py).
 
-14. [model_city.py](./model_city.py)
-    [14-model_city_fetch_by_state.py](./14-model_city_fetch_by_state.py),
+14. [model_city.py](./model_city.py),
+    [14-model_city_fetch_by_state.py](./14-model_city_fetch_by_state.py)
     - Module defines a class `City` that inherits from `Base` and links to the MySQL table `cities`.
     - Includes class attributes - `id` (cant be null, a primary key), `name` (cant be null, string of 128 characters) and `state_id` (cant be null, a foreign key to `states.id`).
     - Script lists all `City` objects in the database `hbtn_0e_14_usa`.
