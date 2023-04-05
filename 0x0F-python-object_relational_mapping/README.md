@@ -1,15 +1,116 @@
 # Python - Object Relational Mapping :page_with_curl: 
-This project explores the concept of [Object Relational Mapping](https://www.fullstackpython.com/object-relational-mappers-orms.html). ORM is a special tool that connects two things - an object-oriented programming language and a relational database. It provides a way to store and retrieve data from a database using the programming language's objects, rather than writing complex SQL queries. This makes it easier for developers to work with databases and allows them to focus on the application logic instead of database management.
+This project explores the concept of [Object Relational Mapping](https://www.fullstackpython.com/object-relational-mappers-orms.html). 
+ORM is a special tool that connects two things - an object-oriented programming language and a relational database. It provides a way to store and retrieve data from a database using the programming language's objects, rather than writing complex SQL queries. This makes it easier for developers to work with databases and allows them to focus on the application logic instead of database management.
 ORM helps take the information in the database and turn it into objects that can be used in the programming language. This makes it easier for developers to work with the information and focus on building the program, rather than worrying about managing the database. 
 
-## Objectives :bulb:
-In this project, I learnt:
-  - Why Python programming is awesome
-  - How to connect to a MySQL database from a Python script
-  - How to `SELECT` rows in a MySQL table from a Python script
-  - How to `INSERT` rows in a MySQL table from a Python script
-  - What ORM means
-  - How to map a Python Class to a MySQL table
+## Objectives :Bulb:
+
+**Python programming is amazing** because its one of the most popular languages used by developers worldwide. It's known for its simplicity, readability, and versatility, making it an excellent choice for developing various applications. Python's syntax is concise and easy to learn, making it an ideal language for beginners. It also has a vast and active community, which means there are plenty of resources and support available. Python is widely used in various fields, including web development, data science, machine learning, artificial intelligence, and more. With its many advantages, Python programming truly is awesome.
+
+**To connect to a MySQL database from a Python script**, you'll need to use a library called "mysql-connector-python." You can install it using pip, like this:
+```
+pip install mysql-connector-python
+```
+Once you have the library installed, you can use the following code to connect to your MySQL database:
+```
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+print(mydb)
+```
+In this code, you need to replace the placeholders with your actual credentials for the host, username, password, and database.
+
+Once you've established a connection to your MySQL database, you can use the following code *to select rows from a table*:
+```
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM yourtable")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+```
+In this code, you need to replace the placeholders with your actual credentials for the host, username, password, database, and table. The SELECT statement retrieves all the rows from the table, and the fetchall() method returns all the rows as a list of tuples. You can then iterate over the list and print each row.
+
+**To insert rows into a MySQL table from a Python script**, you can use the following code:
+```
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+mycursor = mydb.cursor()
+
+sql = "INSERT INTO yourtable (column1, column2, column3) VALUES (%s, %s, %s)"
+val = ("value1", "value2", "value3")
+
+mycursor.execute(sql, val)
+
+mydb.commit()
+
+print(mycursor.rowcount, "record inserted.")
+```
+
+**To map a Python class to a MySQL table**, you can use an ORM library like SQLAlchemy. Here's an example of how to do it:
+```
+from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+# Create the connection to the MySQL database
+engine = create_engine('mysql+mysqlconnector://username:password@localhost:3306/yourdatabase')
+
+# Create the declarative base object
+Base = declarative_base()
+
+# Define the class that represents the table
+class MyTable(Base):
+    __tablename__ = 'mytable'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(255))
+    age = Column(Integer)
+
+# Create the table if it doesn't exist
+Base.metadata.create_all(engine)
+
+# Create a session to interact with the database
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Add a new record to the table
+new_record = MyTable(name='John', age=30)
+session.add(new_record)
+session.commit()
+
+# Retrieve all records from the table
+records = session.query(MyTable).all()
+for record in records:
+    print(record.id, record.name, record.age)
+```
+In this code, you define a class `MyTable` that inherits from `Base1`, which is the declarative base object. The `__tablename__` attribute specifies the name of the table in the database. Each attribute of the class corresponds to a column in the table. Once you define the class, you can use the `create_all` method of the metadata object to create the table if it doesn't exist.
+
+To interact with the database, you create a session using the `sessionmaker` object and add records to the table using the `add` method of the session object. You can retrieve records from the table using the `query` method of the session object and iterate over the results. SQLAlchemy takes care of translating your Python code into SQL queries and mapping the results back to Python objects.
 
 ## Task Description
 1. [0-select_states.py](./0-select_states.py)
