@@ -15,25 +15,23 @@ if __name__ == "__main__":
     for row in rows:
         print(row)
     cursor.close()
-    db.close() 
-    
-    """
--Import the MySQLdb module to allow the script to interact with the MySQL database.
+    db.close()
 
--Import the argv function from the sys module to allow the script to receive input arguments from the command line.
+"""
+- Use MySQLdb module to interact with MySQL database.
+- Import `argv` function from sys module to get
+  input arguments from command line.
+- Check if script is the main program.
+- Create connection to MySQL db using input 
+  arguments for host, port, username, password, 
+  db name, and character set.
+- Create cursor object to execute SQL statements
+  and retrieve data from the db.
+- Execute `SELECT` statement to retrieve all rows from
+  "states" table and order them by "id" in ascending order.
+- Use `fetchall()` method to retrieve all rows 
+  returned by `SELECT` statement as list of tuples.
+- Iterate through rows and print each one to console.
+- Close cursor and db connection to clean up resources.
+"""
 
--Check if the script is being run as the main program (as opposed to being imported as a module).
-
--Create a connection to the MySQL database using the input arguments for the host, port, username, password, database name, and character set.
-
--Create a cursor object to allow the script to execute SQL statements and retrieve data from the database.
-
--Execute a SELECT statement that retrieves all rows from the "states" table and orders them by their "id" in ascending order.
-
--Use the fetchall() method to retrieve all of the rows returned by the SELECT statement. The fetchall() statement returns a list of tuples, 
-where each tuple represents a row of the result set. Each tuple contains values for each column in the corresponding row of the "states" table.
-
--Iterate through the rows and print each one to the console.
-
--Close the cursor and database connection to clean up resources.
-    """
