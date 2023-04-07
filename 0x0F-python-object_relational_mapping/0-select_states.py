@@ -22,16 +22,15 @@ if __name__ == "__main__":
 - Import `argv` function from sys module to get
   input arguments from command line.
 - Check if script is the main program.
-- Create connection to MySQL db using input 
-  arguments for host, port, username, password, 
+- Create connection to MySQL db using input
+  arguments for host, port, username, password,
   db name, and character set.
 - Create cursor object to execute SQL statements
   and retrieve data from the db.
 - Execute `SELECT` statement to retrieve all rows from
   "states" table and order them by "id" in ascending order.
-- Use `fetchall()` method to retrieve all rows 
+- Use `fetchall()` method to retrieve all rows
   returned by `SELECT` statement as list of tuples.
 - Iterate through rows and print each one to console.
 - Close cursor and db connection to clean up resources.
 """
-
