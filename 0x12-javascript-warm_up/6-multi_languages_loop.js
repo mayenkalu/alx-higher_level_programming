@@ -8,4 +8,3 @@ const lines = [
 lines.forEach((line) => {
   console.log(line);
 });
-
