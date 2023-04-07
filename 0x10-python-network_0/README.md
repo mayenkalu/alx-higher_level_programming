@@ -124,8 +124,7 @@ curl https://www.example.com
 
 This command sends a GET request to https://www.example.com and outputs the response to the terminal.
 
-What happens when you type google.com in your browser (Application level):
-
+Pactical:
 When you type google.com in your browser and press enter, your browser sends a request to Google's servers using the HTTP protocol. The request includes information such as the URL, any headers, and any cookies associated with the domain. Google's servers respond with an HTTP response, which includes the HTML content of the page, as well as any other resources required to render the page, such as images and JavaScript files. Your browser then interprets the HTML and renders the page on your screen. During this process, various other things happen, such as DNS resolution and TLS negotiation, but at a high level, this is what happens at the application level.
 
 ## Tests :heavy_check_mark:                                         
